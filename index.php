@@ -80,9 +80,18 @@ if (isset($conn)){mysqli_close($conn);}
                 <input type="submit" name="submit" value="Login" />
             </form>
 
-            <div id="content">
-                <?php readAllMovies() ?> <!-- displays the function //the main part of the site, shows the movies-->
-            </div>
+            <section id="two" class="wrapper style1 special">
+                <div class="inner">
+                    <h2>Woop woop! </h2>
+                    <div class="container">
+                        <br/><br/>
+                        <?php readAllMovies() ?> <!-- displays the function //the main part of the site, shows the movies-->
+                        <br/><br/>
+                    </div>
+                    </footer>
+                </div>
+            </section>
+
 
         </div>
     </section>
