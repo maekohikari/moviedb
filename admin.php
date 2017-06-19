@@ -14,9 +14,9 @@ if(isset($_POST['submitMovie'])) {
     $text = htmlspecialchars($_POST['text']);
     $text = mysqli_real_escape_string($conn, htmlspecialchars(trim($_POST['text'])));
     $text = prep($_POST['text']);
-    $movieName = trim(prep($_POST['movieName']));
+    $movieName = trim(prep($_POST['MovieName']));
     $description = trim(prep($_POST['Description']));
-    $genre = $_POST['Genre'];
+    $genre = trim(prep($_POST['Genre']));
     $year = $_POST['Year'];
     $file = $_FILES['Image'] ['tmp_name']; //handles the image
     $imageName = $_FILES['Image']['name']; // handles the image

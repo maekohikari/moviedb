@@ -1,4 +1,11 @@
-<?php require_once("constants.php");
+<?php
+
+define("DB_SERVER", "localhost");
+define("DB_USER" , "root");
+define("DB_PASS","1234");
+define("DB_NAME", "moviedb");
+
+
 $conn = mysqli_connect(DB_SERVER,DB_USER,DB_PASS);
     if (!$conn) {
     die ("Could not connect!");

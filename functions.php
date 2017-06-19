@@ -4,7 +4,7 @@ function readAllMovies()
 {
     global $conn;
     $sqlMovies = "SELECT MovieName, Genre, Description, Year, Image FROM movie"; /*SELECT column_name FROM table_name*/
-    $resultMovies = $conn->query($sqlMovies);
+    $resultMovies = $conn-> query($sqlMovies);
 
     if ($resultMovies->num_rows > 0) {
         // output data of each row
